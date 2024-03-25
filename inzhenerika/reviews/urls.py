@@ -6,5 +6,5 @@ urlpatterns = [
     path('reviews/create', ReviewCreateView.as_view(), name='create_review'),
     path('reviews/list', ReviewListView.as_view(), name='list_review'),
     path('reviews/delete/<int:pk>', ReviewDeleteView.as_view(), name='delete_review'),
-    path('reviews/update/<int:pk>', ReviewUpdateView.as_view(), name='update_review'),
+    path('reviews/update/<int:pk>', ReviewUpdateView.as_view(), name='update_review'), # Тест
 ]

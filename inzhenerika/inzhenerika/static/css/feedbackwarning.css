@@ -1,0 +1,15 @@
+.infotext{
+    color: #489AE7;
+    font-size: 1em;
+    text-align: left;
+}
+.enter-btn{
+    background-color: #489AE7;
+    color: white;
+    font-size: 2em;
+    font-weight: 500;
+    width: 12.5em;
+    height: 3.125em;
+    border-radius: 15px;
+    border: none;
+}

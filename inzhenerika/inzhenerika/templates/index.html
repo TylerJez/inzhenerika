@@ -1,0 +1,297 @@
+{% load static %}
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'css/feedbackform.css' %}" />
+    <title>Инженерика</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="container text-center">
+        <div class="row shapka-logo">
+          <div class="col-3">
+            <a href="index.html" class="main-link">
+              <img src="{% static 'images/chertyozh_icon.png' %}" alt="" />
+              <img src="{% static 'images/inzhener_icon.png' %}" alt="" />
+              <img src="{% static 'images/shesteryonka_icon.png' %}" alt="" />
+              <span class="text-logo" align="center">ИНЖЕНЕРИКА</span>
+            </a>
+          </div>
+          <div class="col-1">
+            <a href="index.html#info-block"><button class="shapka-button">О НАС</button></a>
+          </div>
+          <div class="col-1">
+            <a href="index.html#uslugi-block"><button class="shapka-button">УСЛУГИ</button></a>
+          </div>
+          <div class="col-1">
+            <a href="index.html#feedback-block"><button class="shapka-button">ОТЗЫВЫ</button></a>
+          </div>
+          <div class="col-1">
+            <a href="index.html#contacts-block"><button class="shapka-button">КОНТАКТЫ</button></a>
+          </div>
+          <div class="col-5">
+            <a href="calc.html"><button class="shapka-button-calc">РАБОТЫ И КАЛЬКУЛЯТОР <img src="{% static 'images/calculator_shapka_icon.png' %}" alt="" /></button></a>
+          </div>
+        </div>
+      </div>
+      <!-- Стрелка -->
+      <div class="row">
+        <div class="col-11"></div>
+        <div class="col-1">
+          <button href="index.html" class="btn-up btn-up-hide"><img src="{% static 'images/strela_up.png' %}" alt="" /></button>
+        </div>
+      </div>
+    </header>
+    <script src="{% static 'js/up.js' %}"></script>
+
+    <main>
+      <!-- Первый блок -->
+      <div class="container text-center">
+        <div class="row first-block">
+          <div class="col-8">
+            <h1 class="text-center header-text">Проектирование инженерных сетей и коммуникаций</h1>
+            <p class="text-center info-text-fb">
+              Общество с ограниченной ответственностью Группа Компаний “Инженерика”<br />г. Новосибирск
+            </p>
+            <div class="row row-cols-lg-3 fishki">
+              <div class="p-3">
+                <img src="{% static 'images/zvezda_icon.png' %}" alt="" />
+                <span align="center">Все регионы РФ</span>
+              </div>
+              <div class="p-3">
+                <img src="{% static 'images/zvezda_icon.png' %}" alt="" />
+                <span align="center">Подготовка проекта от 5 дней</span>
+              </div>
+              <div class="p-3">
+                <img src="{% static 'images/zvezda_icon.png' %}" alt="" />
+                <span align="center">Работаем по договору с гарантией</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-4">
+            <img src="{% static 'images/skhema_pic.png' %}" alt="" />
+          </div>
+        </div>
+      </div>
+      <!-- Инфоблок -->
+      <div class="container text-center">
+        <div class="row infoblock">
+          <div class="col-1"></div>
+          <div class="col-6 col-md-3">
+            <h1 class="header-infoblock" id="info-block">О НАС</h1>
+            <img class="" src="{% static 'images/inzhener_pic.png' %}" alt="" />
+          </div>
+          <div class="col-6 col-md-7 text-area-infoblock">
+            <p class="text-infoblock">Мы гордимся тем, что наша работа охватывает все регионы России, но особенно активно мы работаем в Сибири и на Дальнем Востоке. Наша команда опытных и высококвалифицированных специалистов всегда готова предложить оптимальное решение для каждого конкретного проекта с учетом всех особенностей и требований заказчика.</p>
+            <p class="text-infoblock">Наши инженерные решения направлены на повышение эффективности, безопасности и экологичности объектов. Мы стремимся создавать устойчивые и надежные системы, которые отвечают самым высоким стандартам качества и соответствуют мировым тенденциям развития технологий.</p>
+            <p class="text-infoblock">Компания “Инженерика” гарантирует своим клиентам индивидуальный подход, прозрачность сотрудничества и строгое соблюдение сроков выполнения проектов. Мы постоянно совершенствуем свои знания и навыки, следим за новыми технологиями и разработками в отрасли, чтобы предложить нашим клиентам наиболее передовые и эффективные решения.Компания “Инженерика” гарантирует своим клиентам индивидуальный подход, прозрачность сотрудничества и строгое соблюдение сроков выполнения проектов. Мы постоянно совершенствуем свои знания и навыки, следим за новыми технологиями и разработками в отрасли, чтобы предложить нашим клиентам наиболее передовые и эффективные решения.</p>
+          </div>
+          <div class="col-1"></div>
+        </div>
+      </div>
+      <!-- Услуги -->
+      <div class="container text-center">
+        <div class="row uslugi">
+          <h1 class="header-uslugi" id="uslugi-block">УСЛУГИ</h1>
+          <div class="col-1"></div>
+          <div class="slider-container col-10">
+            <div class="slider">
+              <img src="{% static 'images/slider/elecrichestvo.png' %}" alt="" />
+              <img src="{% static 'images/slider/voda.png' %}" alt="" />
+              <img src="{% static 'images/slider/ventilyatsiya.png' %}" alt="" />
+              <img src="{% static 'images/slider/otoplenie.png' %}" alt="" />
+            </div>
+            <button class="uslugi-levo-btn" type="button" aria-label="Посмотреть предыдущий слайд"><img src="{% static 'images/slider/strelalevo_uslugi_slider_icon.png' %}" alt="" /></button>
+            <button class="uslugi-pravo-btn" type="button" aria-label="Посмотреть следующий слайд"><img src="{% static 'images/slider/strelapravo_uslugi_slider_icon.png' %}" alt="" /></button>
+          </div>
+          <h1 class="header-uslugi">ПРИМЕРЫ РАБОТ</h1>
+          <div class="col-4">
+            <a href="https://autode.sk/3QINgye" target="_blank" rel="noopener noreferrer"><img src="{% static 'images/dom_primer.png' %}" alt="" /></a>
+            <br />
+            <a href="https://autode.sk/3QINgye" class="primer-link" target="_blank" rel="noopener noreferrer">ОТКРЫТЬ</a>
+          </div>
+          <div class="col-8">
+            <div class="uslugi-text_block">
+              <p class="uslugi-text">Проект частного дома представляет собой комплекс решений проектирования инженерных сетей: отопление, водоснабжение, водоотведение, электроснабжение.</p>
+            </div>
+          </div>
+
+          <div class="col-4">
+            <a href="https://autode.sk/3Soc7sr" target="_blank" rel="noopener noreferrer"><img src="{% static 'images/terminal_primer.png' %}" alt="" /></a>
+            <br />
+            <a href="https://autode.sk/3Soc7sr" class="primer-link" target="_blank" rel="noopener noreferrer">ОТКРЫТЬ</a>
+          </div>
+          <div class="col-8">
+            <div class="uslugi-text_block">
+              <p class="uslugi-text">Проект газонаполнительного терминала представляет собой проектирование площадки и трубопроводов сжиженного газа</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Отзывы -->
+      <div class="container text-center">
+        <div class="row otzyv">
+          <div class="col-12">
+            <h1 class="header-otzyv" id="feedback-block">ОТЗЫВЫ</h1>
+            <div class="otzyv-details" align="center">
+              <a href="feedback.html">
+                <button class="otzyv-btn" align="center">ОСТАВИТЬ ОТЗЫВ</button>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="row otzyv">
+          <div class="col-1"></div>
+          <div class="col-5">
+            <div class="otzyv-block">
+              <div class="otzyv-content">
+                <img src="{% static 'images/user_otzyv_icon_56x56.png' %}" alt="" align="left" class="otzyv-img" />
+                <h3 class="otzyv-comment-header">
+                  <p align="left">Иванов Петр Кириллович</p>
+                  <p align="left">
+                    Оценка: <span>5</span>
+                  </p>
+                </h3>
+                <h4>Инженерные системы для дома</h4>
+                <div class="otzyv-comment-block">
+                  <p class="otzyv-comment-data-header">
+                    Дата: <span>05.03.2024</span>
+                  </p>
+                  <p class="otzyv-comment-text-header">Комментарий:</p>
+                  <div class="otzyv-comment">
+                    <p>Недавно я обратился "Инженерику” для заказа проектирования инженерных систем
+                       для моего дома. И хотел бы выразить свою благодарность за превосходную работу и внимание к деталям!
+                       С самого начала меня приятно удивило, что специалисты компании учли все мои пожелания и предложили
+                       оптимальные решения, которые соответствовали моим требованиям и бюджету. Весь процесс был организован на высоком уровне,
+                       и я чувствовал себя комфортно, общаясь с проектировщиком.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-5">
+            <div class="otzyv-block">
+              <div class="otzyv-content">
+                <img src="{% static 'images/user_otzyv_icon_56x56.png' %}" alt="" align="left" class="otzyv-img" />
+                <h3 class="otzyv-comment-header">
+                  <p align="left">Семин Павел Степанович</p>
+                  <p align="left">
+                    Оценка: <span>5</span>
+                  </p>
+                </h3>
+                <h4>Отопление квартиры</h4>
+                <div class="otzyv-comment-block">
+                  <p class="otzyv-comment-data-header">
+                    Дата: <span>06.07.2023</span>
+                  </p>
+                  <p class="otzyv-comment-text-header">Комментарий:</p>
+                  <div class="otzyv-comment">
+                    <p>
+                      Я очень доволен работой по проектированию системы отопления для моей квартиры.
+                      Специалисты учли все мои пожелания и предложили оптимальное решение, которое
+                      соответствует моим потребностям и бюджету. Работа была выполнена качественно и в срок,
+                      а также были даны подробные инструкции по установке и эксплуатации системы. Я рекомендую
+                      эту компанию всем, кто ищет профессиональную помощь в проектировании системы отопления.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row otzyv">
+          <div class="col-12 otzyv-link-block">
+            <h6><a href="feedback.html" class="otzyv-link">Все отзывы</a></h6>
+          </div>
+        </div>
+      </div>
+
+      <!-- Контакты -->
+      <div class="container text-center">
+        <div class="row contact">
+          <div class="col-12">
+            <h1 class="contact-header" id="contacts-block">КОНТАКТЫ</h1>
+          </div>
+        </div>
+        <div class="row contact">
+          <div class="col-1"></div>
+          <div class="col-5">
+            <a href="https://yandex.ru/maps/-/CDBo7NMB" target="_blank" rel="noopener noreferrer">
+              <img src="{% static 'images/karta_pic.png' %}" alt="" />
+            </a>
+           
+          </div>
+          <div class="col-5">
+            <div class="contact-info">
+              <p>
+                <a href="https://yandex.ru/maps/-/CDBo7NMB" target="_blank" rel="noopener noreferrer" class="contact-link">г. Новосибирск, улица Станционная 60/10</a>
+                <br />
+                <a href="tel:+79965452512" target="_blank" rel="noopener noreferrer" class="contact-link">Телефон: +7-996-545-25-12</a>
+                <br />
+                <a href="mailto:engenerika@mail.ru" target="_blank" rel="noopener noreferrer" class="contact-link">E-mail: engenerika@mail.ru</a>
+              </p>
+            </div>
+            <div class="contact-zayavka">
+              <div class="contact-zayavka-header">
+                <h1 class="contact-zayavka-header-text">Появились вопросы? <br>Оставьте заявку на консультацию!</h1>
+              </div>
+              <img src="{% static 'images/konsultatsiya_pic.png' %}" alt="" /><br />
+              <div class="order-summary-bg">
+                <details class="order-details">
+                  <summary class="order-summary" align="center">
+                    <span>ЗАКАЗАТЬ КОНСУЛЬТАЦИЮ</span>
+                  </summary>
+                  <form action="" method="POST" id="form-consult">
+                    {% csrf_token %}
+                    <br />
+                    {{consult_form}}
+                    <button class="send-btn" type="submit" id="send-btn">
+                      <img src="{% static 'images/phone_icon.png' %}" alt="">
+                      <span>ЗАКАЗАТЬ</span>
+                    </button>
+                  </form>
+                </details>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Слоган -->
+      <div class="container text-center">
+        <div class="row slogan">
+          <div class="col-12">
+            <h1 class="slogan-text">Творим будущее своими идеями!</h1>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="{% static 'js/jquery.js' %}"></script>
+    <script src="{% static 'js/uslugi.js' %}"></script>
+    <script src="{% static 'js/send.js' %}"></script>
+    <script src="{% static 'js/form.js'%}"></script>
+
+    <footer>
+      <div class="container text-center">
+        <div class="row footer-block">
+          <div class="col-1"></div>
+          <div class="col-5">
+            <p class="footer-header">ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ “ГРУППА КОМПАНИЙ “ИНЖЕНЕРИКА”</p>
+          </div>
+          <div class="col-3">
+            <a href="https://yandex.ru/maps/-/CDBo7NMB" target="_blank" rel="noopener noreferrer" class="footer-text">г. Новосибирск, улица Станционная 60/10</a>
+          </div>
+          <div class="col-2">
+            <a href="tel:+79965452512" target="_blank" rel="noopener noreferrer" class="footer-text">Телефон: +7-996-545-25-12</a>
+            <a href="mailto:engenerika@mail.ru" target="_blank" rel="noopener noreferrer" class="footer-text">E-mail: engenerika@mail.ru</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

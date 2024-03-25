@@ -1,0 +1,231 @@
+.calc{
+    width: 90em;
+}
+.calc-project-header{
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+    color: #489AE7;
+    font-weight: 900;
+    font-size: 3em;
+    text-align: center;
+}
+.calc-project-card{
+    border-radius: 1.25em;
+    border-color: #489AE7;
+    border-style: solid;
+    border-width: 0.25em;
+    background-color: #ffffff;
+    width: 36.25em;
+    height: 18.75em;
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+    padding-right: 1.5em;
+    padding-left: 1.5em;
+    margin-top: 0.75em;
+    margin-bottom: 0.75em;
+    margin-left: 0.75em;
+    margin-right: 0.75em;
+
+}
+.card-header{
+    color: #000000;
+    font-weight: 700;
+    font-size: 1.5em;
+    border: none;
+    background-color: #FFFFFF;
+    text-align: right;
+}
+.list-text{
+    font-size: 1em;
+    color: #000000;
+    margin-left: 1.5em;
+}
+.list-header{
+    color: #000000;
+    font-size: 1.5em;
+    font-weight: 500;
+    text-align: center;
+}
+.card-header-block{
+    padding: 0.75em, 0.75em, 0.75em, 0.75em;
+}
+
+
+.calc-2{
+    width: 90em;
+    height: auto;
+    background-color: #489AE7;
+}
+.calc-header{
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+    color: #ffffff;
+    font-weight: 900;
+    font-size: 3em;
+    text-align: center;
+}
+.calc-form{
+    background-color: #FFFFFF;
+    border-radius: 1.25em;
+    padding-top: 0.75em;
+    padding-bottom: 0.75em;
+    padding-left: 0.75em;
+    padding-right: 0.75em;
+    margin-left: 2.5em;
+    width: 85em;
+    margin-bottom: 3em;
+}
+.calc-select{
+    color: #489AE7;
+    border-radius: 1.25em;
+    font-size: 1.25em;
+    border: none;
+    border-color: #489AE7;
+    background-color: #FFFFFF;
+}
+.consult-link{
+    text-align: center;
+    font-size: 1.25em;
+    color: #489AE7;
+}
+.calc-table-header{
+    background-color: #489AE7;
+    color: #FFFFFF;
+    font-size: 1.25em;
+    font-weight: 500;
+    text-align: center;
+    border-color: #489AE7;
+    border-style: solid;
+    border-width: 1px;
+}
+.calc-table-td{
+    background-color: #FFFFFF;
+    color: #489AE7;
+    font-size: 1.25em;
+    font-weight: 500;
+    text-align: center;
+    border-color: #489AE7;
+    border-style: solid;
+    border-width: 1px;
+}
+.calc-table{
+    margin-top: 1.5em;
+}
+.calc-btn{
+    font-size: 1.25em;
+    border-radius: 6.25em;
+    border: none;
+    border-color: #489AE7;
+    border-style: solid;
+    border-width: 1px;
+    color: #489AE7;
+    width: 1.25em;
+    height: 1.25em;
+    background-color: #FFFFFF;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0;
+    display: inline-block;
+    vertical-align: middle;
+}
+.result{
+    font-size: 1.5em;
+    font-weight: 500;
+    color: #000000;
+
+}
+.label-select{
+    font-size: 1.25em;
+    font-weight: 500;
+    color: #489AE7;
+}
+
+.form-control 
+{
+    height:2.5em;
+    width:5em;
+    
+}
+
+.inp-group 
+{
+    display: flex;
+    justify-content: center;
+
+}
+.inp-group .quant 
+{
+    border: 1px solid #489AE7; 
+    box-sizing:border-box;
+}
+.inp-group .minpl 
+{
+    position: absolute;
+    top: 50%;
+    box-sizing: border-box;
+    right: 0px;
+    margin-left: 0.625em;
+    margin-right: 0.625em;
+    text-align: center;
+    width: 1.25em;
+    line-height: 1.125em;
+    background: #489AE7;
+    color: #FFFFFF;
+    cursor: pointer;
+    border: 1px solid #489AE7;
+    vertical-align: middle;
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    border-radius: 12px;
+}
+.inp-group .minpl:hover 
+{
+    background:#FFFFFF;
+    color: #489AE7;
+}
+.inp-group .plus 
+{
+    top: 0px;
+}
+.inp-group .minus
+{
+    bottom: 0px
+}
+
+.send-btn{
+    color: #ffffff;
+    background-color: #489AE7;
+    font-size: 2em;
+    font-weight: 700;
+    border: none;
+    border-radius: 1.25em;
+    width: 7em;
+
+}
+.send-btn:hover{
+    background-color: #ffffff;
+    color: #489AE7;
+    border-style: solid;
+    border-width: 3px;
+    border-color: #489AE7;
+}
+.enter-btn{
+    top: 50%;
+    height: 1.75em;
+    width: 1.75em;
+    color: #FFFFFF;
+    background-color: #489AE7;
+    border-radius: 20px;
+    font-size: 1.125em;
+    font-weight: 900;
+    border: none;
+    margin-left: 6px;
+    justify-content: center;
+    vertical-align: middle;
+}
+.enter-btn:hover{
+    color: #489AE7;
+    border: solid 4px #489AE7;
+    background-color: #FFFFFF;
+}

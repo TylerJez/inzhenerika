@@ -1,0 +1,485 @@
+{%load static %}
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/calc.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/feedbackform.css' %}">
+    <title>Инженерика: Работы и калькулятор</title>
+</head>
+
+<body>
+    <header>
+        <div class="container text-center">
+            <div class="row shapka-logo">
+                <div class="col-3">
+                    <a href="index.html" class="main-link">
+                        <img src="{% static 'images/chertyozh_icon.png' %}" alt="">
+                        <img src="{% static 'images/inzhener_icon.png' %}" alt="">
+                        <img src="{% static 'images/shesteryonka_icon.png' %}" alt="">
+                        <span class="text-logo" align="center">ИНЖЕНЕРИКА</span>
+                    </a>
+                </div>
+                <div class="col-1">
+                    <a href="index.html#info-block">
+                        <button class="shapka-button">О НАС</button>
+                    </a>
+                </div>
+                <div class="col-1">
+                    <a href="index.html#uslugi-block">
+                        <button class="shapka-button">УСЛУГИ</button>
+                    </a>
+                </div>
+                <div class="col-1">
+                    <a href="index.html#feedback-block">
+                        <button class="shapka-button">ОТЗЫВЫ</button>
+                    </a>
+                </div>
+                <div class="col-1">
+                    <a href="index.html#contacts-block">
+                        <button class="shapka-button">КОНТАКТЫ</button>
+                    </a>
+                </div>
+                <div class="col-5">
+                    <a href="calc.html">
+                        <button class="shapka-button-calc">РАБОТЫ И КАЛЬКУЛЯТОР
+                            <img src="{% static 'images/calculator_shapka_icon.png' %}" alt="">
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!--Стрелка-->
+        <div class="row">
+            <div class="col-11">
+            </div>
+            <div class="col-1">
+                <button href="index.html" class="btn-up btn-up-hide">
+                    <img src="{% static 'images/strela_up.png' %}" alt="">
+                </button>
+            </div>
+        </div>
+    </header>
+    <script src="js/up.js"></script>
+
+    <main>
+        <!--Виды проектирования-->
+        <div class="container">
+            <div class="row calc">
+                <h1 class="calc-project-header">ВИДЫ ПРОЕКТИРОВАНИЯ</h1>
+            </div>
+            <div class="row calc">
+                <div class="col-1"></div>
+                <div class="col-5 calc-project-card">
+                    <p class="card-header-block">
+                        <img src="{% static 'images/electrichestvo_calc_pic.png' %}" alt="">
+                        <span class="card-header">ЭЛЕКТРОСНАБЖЕНИЕ</span>
+                    </p>
+                    <ul class="list-text">
+                        <li>Разработка схемы расположения электропроводки</li>
+                        <li>Расчет нагрузки на каждый отдельный элемент электросистемы</li>
+                        <li>Выбор оборудования</li>
+                        <li>Анализ возможных неисправностей и определения средств и методов ее устранения</li>
+                    </ul>
+                </div>
+                <div class="col-5 calc-project-card">
+                    <p>
+                        <img src="{% static 'images/kanalizatsiya_calc_pic.png' %}" alt="">
+                        <span class="card-header">ВОДОСНАБЖЕНИЕ</span>
+                    </p>
+                    <ul class="list-text">
+                        <li>Гидравлический расчет пропускной способности</li>
+                        <li>Создание рабочего проекта</li>
+                        <li>Расчет сметы оборудования</li>
+                        <li>Оформление проектной документации</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row calc">
+                <div class="col-1"></div>
+                <div class="col-5 calc-project-card">
+                    <p>
+                        <img src="{% static 'images/ventilyatsiya_calc_pic.png' %}" alt="">
+                        <span class="card-header">ВЕНТИЛЯЦИЯ</span>
+                    </p>
+                    <ul class="list-text">
+                        <li>Расчет сметы оборудования</li>
+                        <li>Расчет нагрузки на каждый отдельный элемент вентиляционной системы</li>
+                        <li>Выбор оборудования</li>
+                        <li>Комплект рабочей документации</li>
+                    </ul>
+                </div>
+                <div class="col-5 calc-project-card">
+                    <p>
+                        <img src="{% static 'images/otoplenie_calc_pic.png' %}" alt="">
+                        <span class="card-header">ОТОПЛЕНИЕ</span>
+                    </p>
+                    <ul class="list-text">
+                        <li>Расчет теплопотерь</li>
+                        <li>Распределение отопительных приборов</li>
+                        <li>Расчет сметы оборудования</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!--Калькулятор-->
+        <div class="container text-center">
+            <div class="row calc-2">
+                <div class="row">
+                    <div class="col-12">
+                        <h1 class="calc-header">КАЛЬКУЛЯТОР СТОИМОСТИ РАБОТ</h1>
+                    </div>
+                </div>
+                <form class="calc-form" action="" method="get">
+                    <div class="row">
+                        <div class="col-12 text-center">
+                            <a href="index.html#contacts-block" class="consult-link">Заказать консультацию</a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-1"></div>
+                        <div class="col-10">
+                            <form method="post">
+                                <table class="calc-table">
+                                <tr>
+                                    <td class="calc-table-header" width="576">Название</td>
+                                    <td class="calc-table-header" width="142">Ед. изм.</td>
+                                    <td class="calc-table-header" width="142">Кол-во</td>
+                                    <td class="calc-table-header" width="200">Итого (р.)</td>
+                                </tr>
+                                <tr class="t-row">
+                                    <td class="calc-table-td" width="576">
+                                        Проектирование системы электроснабжения для квартиры<br>
+                                        (90 рублей за 1 кв. м.)
+                                    </td>
+                                    <td class="calc-table-td" width="142">кв.м</td>
+                                    <td class="calc-table-td" width="142">
+                                        <div class="inp-group">
+                                            <input class="quant form-control" type="number" name="count" value="0"
+                                                        data-step="1" data-price="90" data-min="1">
+                                        </div>
+
+
+                                    </td>
+                                    <td class="price calc-table-td " width="200">0</td>
+                                </tr>
+                                <tr class="t-row">
+                                    <td class="calc-table-td" width="576">
+                                        Проектирование системы водоснабжения для квартиры<br>
+                                        (90 рублей за 1 кв. м.)
+                                    </td>
+                                    <td class="calc-table-td" width="142">кв.м</td>
+                                    <td class="calc-table-td" width="142">
+                                        <div class="inp-group">
+                                            <input class="quant form-control" type="number" name="count" value="0"
+                                                data-step="1" data-price="90" data-min="1">
+
+                                        </div>
+                                    </td>
+                                    <td class="price calc-table-td " width="200">0</td>
+                                </tr>
+                                <tr class="t-row">
+                                    <td class="calc-table-td" width="576">
+                                        Проектирование системы вентиляции для квартиры<br>
+                                        (90 рублей за 1 кв. м.)
+                                    </td>
+                                    <td class="calc-table-td" width="142">кв.м</td>
+                                    <td class="calc-table-td" width="142">
+                                        <div class="inp-group">
+                                            <input class="quant form-control" type="number" name="count" value="0"
+                                                data-step="1" data-price="90" data-min="1">
+
+                                        </div>
+                                    </td>
+                                    <td class="price calc-table-td " width="200">0</td>
+                                </tr>
+                                <tr class="t-row">
+                                    <td class="calc-table-td" width="576">
+                                        Проектирование системы отопления для квартиры<br>
+                                        (90 рублей за 1 кв. м.)
+                                    </td>
+                                    <td class="calc-table-td" width="142">кв.м</td>
+                                    <td class="calc-table-td" width="142">
+                                        <div class="inp-group">
+                                            <input class="quant form-control" type="number" name="count" value="0"
+                                                data-step="1" data-price="90" data-min="1">
+
+                                        </div>
+                                    </td>
+                                    <td class="price calc-table-td " width="200">0</td>
+                                </tr>
+
+                                <tr class="t-row">
+                                    <td class="calc-table-td" width="576">
+                                        Проектирование системы электроснабжения для дома<br>
+                                        (80 рублей за 1 кв. м.)
+                                    </td>
+                                    <td class="calc-table-td" width="142">кв.м</td>
+                                    <td class="calc-table-td" width="142">
+                                        <div class="inp-group">
+                                            <input class="quant form-control" type="number" name="count" value="0"
+                                                data-step="1" data-price="80" data-min="1">
+                                        </div>
+                                    </td>
+                                    <td class="price calc-table-td " width="200">0</td>
+                                </tr>
+                                <tr class="t-row">
+                                    <td class="calc-table-td" width="576">
+                                        Проектирование системы водоснабжения для дома<br>
+                                        (80 рублей за 1 кв. м.)
+                                    </td>
+                                    <td class="calc-table-td" width="142">кв.м</td>
+                                    <td class="calc-table-td" width="142">
+                                        <div class="inp-group">
+                                            <input class="quant form-control" type="number" name="count" value="0"
+                                                data-step="1" data-price="80" data-min="1">
+                                        </div>
+                                    </td>
+                                    <td class="price calc-table-td " width="200">0</td>
+                                </tr>
+                                <tr class="t-row">
+                                    <td class="calc-table-td" width="576">
+                                        Проектирование системы вентиляции для дома<br>
+                                        (80 рублей за 1 кв. м.)
+                                    </td>
+                                    <td class="calc-table-td" width="142">кв.м</td>
+                                    <td class="calc-table-td" width="142">
+                                        <div class="inp-group">
+                                            <input class="quant form-control" type="number" name="count" value="0"
+                                                data-step="1" data-price="80" data-min="1">
+                                        </div>
+                                    </td>
+                                    <td class="price calc-table-td " width="200">0</td>
+                                </tr>
+                                <tr class="t-row">
+                                    <td class="calc-table-td" width="576">
+                                        Проектирование системы отопления для дома<br>
+                                        (80 рублей за 1 кв. м.)
+                                    </td>
+                                    <td class="calc-table-td" width="142">кв.м</td>
+                                    <td class="calc-table-td" width="142">
+                                        <div class="inp-group">
+                                            <input class="quant form-control" type="number" name="count" value="0"
+                                                data-step="1" data-price="80" data-min="1">
+                                            </div>
+                                    </td>
+                                    <td class="price calc-table-td " width="200">0</td>
+                                </tr>
+
+                                <tr class="t-row">
+                                    <td class="calc-table-td" width="576">
+                                        Проектирование системы электроснабжения для офиса<br>
+                                        (60 рублей за 1 кв. м.)
+                                    </td>
+                                    <td class="calc-table-td" width="142">кв.м</td>
+                                    <td class="calc-table-td" width="142">
+                                        <div class="inp-group">
+                                            <input class="quant form-control" type="number" name="count" value="0"
+                                                data-step="1" data-price="60" data-min="1">
+                                            </div>
+                                    </td>
+                                    <td class="price calc-table-td " width="200">0</td>
+                                </tr>
+                                <tr class="t-row">
+                                    <td class="calc-table-td" width="576">
+                                        Проектирование системы водоснабжения для офиса<br>
+                                        (60 рублей за 1 кв. м.)
+                                    </td>
+                                    <td class="calc-table-td" width="142">кв.м</td>
+                                    <td class="calc-table-td" width="142">
+                                        <div class="inp-group">
+                                            <input class="quant form-control" type="number" name="count" value="0"
+                                                data-step="1" data-price="60" data-min="1">
+                                            </div>
+                                    </td>
+                                    <td class="price calc-table-td " width="200">0</td>
+                                </tr>
+                                <tr class="t-row">
+                                    <td class="calc-table-td" width="576">
+                                        Проектирование системы вентиляции для офиса<br>
+                                        (60 рублей за 1 кв. м.)
+                                    </td>
+                                    <td class="calc-table-td" width="142">кв.м</td>
+                                    <td class="calc-table-td" width="142">
+                                        <div class="inp-group">
+                                            <input class="quant form-control" type="number" name="count" value="0"
+                                                data-step="1" data-price="60" data-min="1">
+                                            </div>
+                                    </td>
+                                    <td class="price calc-table-td " width="200">0</td>
+                                </tr>
+                                <tr class="t-row">
+                                    <td class="calc-table-td" width="576">
+                                        Проектирование системы отопления для офиса<br>
+                                        (60 рублей за 1 кв. м.)
+                                    </td>
+                                    <td class="calc-table-td" width="142">кв.м</td>
+                                    <td class="calc-table-td" width="142">
+                                        <div class="inp-group">
+                                            <input class="quant form-control" type="number" name="count" value="0"
+                                                data-step="1" data-price="60" data-min="1">
+                                            </div>
+                                    </td>
+                                    <td class="price calc-table-td " width="200">0</td>
+                                </tr>
+
+                                <tr class="t-row">
+                                    <td class="calc-table-td" width="576">
+                                        Проектирование системы электроснабжения для предприятия<br>
+                                        (110 рублей за 1 кв. м.)
+                                    </td>
+                                    <td class="calc-table-td" width="142">кв.м</td>
+                                    <td class="calc-table-td" width="142">
+                                        <div class="inp-group">
+                                            <input class="quant form-control" type="number" name="count" value="0"
+                                                data-step="1" data-price="110" data-min="1">
+                                            </div>
+                                    </td>
+                                    <td class="price calc-table-td " width="200">0</td>
+                                </tr>
+                                <tr class="t-row">
+                                    <td class="calc-table-td" width="576">
+                                        Проектирование системы водоснабжения для предприятия<br>
+                                        (110 рублей за 1 кв. м.)
+                                    </td>
+                                    <td class="calc-table-td" width="142">кв.м</td>
+                                    <td class="calc-table-td" width="142">
+                                        <div class="inp-group">
+                                            <input class="quant form-control" type="number" name="count" value="0"
+                                                data-step="1" data-price="110" data-min="1">
+
+                                        </div>
+                                    </td>
+                                    <td class="price calc-table-td " width="200">0</td>
+                                </tr>
+                                <tr class="t-row">
+                                    <td class="calc-table-td" width="576">
+                                        Проектирование системы вентиляции для предприятия<br>
+                                        (110 рублей за 1 кв. м.)
+                                    </td>
+                                    <td class="calc-table-td" width="142">кв.м</td>
+                                    <td class="calc-table-td" width="142">
+                                        <div class="inp-group">
+                                            <input class="quant form-control" type="number" name="count" value="0"
+                                                data-step="1" data-price="110" data-min="1">
+
+                                        </div>
+                                    </td>
+                                    <td class="price calc-table-td " width="200">0</td>
+                                </tr>
+                                <tr class="t-row">
+                                    <td class="calc-table-td" width="576">
+                                        Проектирование системы отопления для предприятия<br>
+                                        (110 рублей за 1 кв. м.)
+                                    </td>
+                                    <td class="calc-table-td" width="142">кв.м</td>
+                                    <td class="calc-table-td" width="142">
+                                        <div class="inp-group">
+                                            <input class="quant form-control" type="number" name="count" value="0"
+                                                data-step="1" data-price="110" data-min="1">
+
+                                        </div>
+                                    </td>
+                                    <td class="price calc-table-td " width="200">0</td>
+                                </tr>
+
+                                <tr class="t-row">
+                                    <td class="calc-table-td" width="576">
+                                        Вызов мастера на объект в Новосибирске<br>
+                                        (500 рублей за 1 час)
+                                    </td>
+                                    <td class="calc-table-td" width="142">час</td>
+                                    <td class="calc-table-td" width="142">
+                                        <div class="inp-group">
+                                            <input class="quant form-control" type="number" name="count" value="0"
+                                                data-step="1" data-price="500" data-min="1">
+
+                                        </div>
+                                    </td>
+                                    <td class="price calc-table-td " width="200">0</td>
+                                </tr>
+                                <tr class="t-row">
+                                    <td class="calc-table-td" width="576">
+                                        Вызов мастера на объект в пригороде Новосибирска<br>
+                                        (600 рублей за 1 час)
+                                    </td>
+                                    <td class="calc-table-td" width="142">час</td>
+                                    <td class="calc-table-td" width="142">
+                                        <div class="inp-group">
+                                            <input class="quant form-control" type="number" name="count" value="0"
+                                                data-step="1" data-price="600" data-min="1">
+
+                                        </div>
+                                    </td>
+                                    <td class="price calc-table-td " width="200">0</td>
+                                </tr>
+
+                            </table>
+                            </form>
+
+                            <p class="text-center result">Итого: <span class="val" id="itog-span">0</span> рублей</p>
+                        </div>
+                        <div class="col-12">
+                                <form method="POST">
+                                    {% csrf_token %}
+                                    {{calc_form.as_p}}
+                                    <!--<input type="text" placeholder="Название работ (квартира до 100 кв.м)" class="input-name" id="job">
+                                    <br>
+                                    <input type="text" placeholder="Ваше ФИО" class="input-name" id="fio">
+                                    <br>
+                                    <input type="text" placeholder="Ваш телефон" class="input-name" id="phone">
+                                    <br>
+                                    <input type="text" placeholder="Ваш адрес" class="input-name" id="address">
+                                    <br>-->
+                                    <button class="send-btn" id="send-btn" type="submit">Заказать</button>
+                                </form>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-3">
+                            <img src="{% static 'images/inzhener1_calcfon_pic.png' %}" alt="" align="center">
+                        </div>
+                        <div class="col-6">
+                        </div>
+                        <div class="col-3">
+                            <img src="{% static 'images/inzhener2_calcfon_pic.png' %}" alt="" align="center">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+
+    </main>
+
+    <script src="{% static 'js/jquery.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/calc.js' %}"></script>
+    <script src="{% static 'js/calc-span.js' %}"></script>
+    <script src="{% static 'js/send-calc.js' %}"></script>
+
+    <footer>
+        <div class="container text-center">
+            <div class="row footer-block">
+                <div class="col-1"></div>
+                <div class="col-5">
+                    <p class="footer-header">ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ “ГРУППА КОМПАНИЙ “ИНЖЕНЕРИКА”</p>
+                </div>
+                <div class="col-3">
+                    <a href="https://yandex.ru/maps/-/CDBo7NMB" target="_blank" rel="noopener noreferrer"
+                        class="footer-text">г. Новосибирск, улица Станционная 60/10</a>
+                </div>
+                <div class="col-2">
+                    <a href="tel:+79965452512" target="_blank" rel="noopener noreferrer" class="footer-text">Телефон:
+                        +7-996-545-25-12</a>
+                    <a href="mailto:engenerika@mail.ru" target="_blank" rel="noopener noreferrer"
+                        class="footer-text">E-mail: engenerika@mail.ru</a>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+</body>

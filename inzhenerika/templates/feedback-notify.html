@@ -1,0 +1,31 @@
+{% load static %}
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.css'%}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'css/notify.css'%}" />
+    <title>Инженерика</title>
+  </head>
+
+  <body>
+    <main>
+      <!-- Первый блок -->
+      <div class="container text-center">
+        <div class="row">
+          <div class="col-12">
+            <h1 class="notify-text">
+                Спасибо за оставленный отзыв! Ваше мнение для нас важно!
+            </h1>
+            <div>
+              <img src="{% static 'images/smile.png'%}">
+            <p class="notify-text2">
+                Вернуться на <a href="{% url 'index' %}">главную</a>
+            </p>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+  </body>
+</html>

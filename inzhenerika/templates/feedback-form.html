@@ -1,0 +1,88 @@
+{% load static %}
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/feedback.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/feedbackform.css' %}" />
+    <title>Инженерика: Отзывы</title>
+</head>
+
+<body>
+    <header>
+        <div class="container text-center">
+            <div class="row shapka-logo">
+                <div class="col-3">
+                    <a href="{% url 'index' %}" class="main-link">
+                        <img src="{% static 'images/chertyozh_icon.png' %}" alt="">
+                        <img src="{% static 'images/inzhener_icon.png' %}" alt="">
+                        <img src="{% static 'images/shesteryonka_icon.png' %}" alt="">
+                        <span class="text-logo" align="center">ИНЖЕНЕРИКА</span>
+                    </a>
+                </div>
+                <div class="col-1">
+                    <a href="{% url 'index' %}#info-block">
+                        <button class="shapka-button">О НАС</button>
+                    </a>
+                </div>
+                <div class="col-1">
+                    <a href="{% url 'index' %}#uslugi-block">
+                        <button class="shapka-button">УСЛУГИ</button>
+                    </a>
+                </div>
+                <div class="col-1">
+                    <a href="{% url 'index' %}#feedback-block">
+                        <button class="shapka-button">ОТЗЫВЫ</button>
+                    </a>
+                </div>
+                <div class="col-1">
+                    <a href="{% url 'index' %}#contacts-block">
+                        <button class="shapka-button" >КОНТАКТЫ</button>
+                    </a>
+                </div>
+                <div class="col-5">
+                    <a href="calc.html">
+                        <button class="shapka-button-calc">РАБОТЫ И КАЛЬКУЛЯТОР
+                            <img src="{% static 'images/calculator_shapka_icon.png' %}" alt="">
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!--Стрелка-->
+        <div class="row">
+            <div class="col-11">
+            </div>
+            <div class="col-1">
+                <button href="index.html" class="btn-up btn-up-hide">
+                    <img src="{% static 'images/strela_up.png' %}" alt="">
+                </button>
+            </div>
+        </div>
+    </header>
+    <script src="{% static 'js/up.js' %}"></script>
+
+    <main>
+        <<div class="container text-center">
+            <div class="row otzyv-feedback">
+                <div class="col-12">
+                    <div class="review-details">
+                            <span class="review-details-text">ОСТАВИТЬ ОТЗЫВ</span>
+                        <form action="notify_review/" method="POST" id="form-feedback">
+                        {% csrf_token %}
+                          <p>
+                              <!--<label class="score">Ваша оценка:</label>-->
+                            <span>
+                                {{review_form}}
+                            </span>
+                          </p>
+                          <button class="send-btn-feedback" type="submit" id="send-btn-feedback">Отправить</button>
+                        </form>
+                    </div>
+                </div>
+                </div>
+            </div>
+    <main>
